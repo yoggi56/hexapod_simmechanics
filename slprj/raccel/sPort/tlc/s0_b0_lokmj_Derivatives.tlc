@@ -1,0 +1,78 @@
+%implements s0_b0_lokmj_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+NeslSimulationData *simulationData;
+real_T time;
+boolean_T tmp;
+real_T tmp_p[4];
+int_T tmp_e[2];
+NeslSimulator *simulator;
+NeuDiagnosticManager *diagnosticManager;
+NeuDiagnosticTree *diagnosticTree;
+int32_T tmp_i;
+char *msg;
+XDot *_rtXdot;
+%closefile localVarDecl
+%assign tlcDerivativesFcnOfS0B0 = OpaqueTLCBlockFcn("Derivatives", 0, 0, 0, 4)
+%assign tlcDerivativesFcnOfS0B1 = OpaqueTLCBlockFcn("Derivatives", 0, 1, 0, 4)
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+%<tlcDerivativesFcnOfS0B0>\
+%<tlcDerivativesFcnOfS0B1>\
+_rtXdot->jax1pk4qzt[0] = rtX.jax1pk4qzt[1];
+_rtXdot->jax1pk4qzt[1] = ((rtB.lppofjsn4f - rtX.jax1pk4qzt[0]) * 20.0 - 2.0 * rtX.jax1pk4qzt[1]) * 20.0;
+simulationData = (NeslSimulationData *)rtDW.klsagfeed5;
+time = %<(SLibCG_SE(LibGetT()))>;
+simulationData->mData->mTime.mN = 1;
+simulationData->mData->mTime.mX = &time;
+simulationData->mData->mContStates.mN = 2;
+simulationData->mData->mContStates.mX = (real_T *)&rtX.nzskcsc3qt;
+simulationData->mData->mDiscStates.mN = 0;
+simulationData->mData->mDiscStates.mX = NULL;
+simulationData->mData->mModeVector.mN = 0;
+simulationData->mData->mModeVector.mX = NULL;
+tmp = %<(SLibCG_SE(SLibCGIRGetSolverFoundZcEvents()))>;
+simulationData->mData->mFoundZcEvents = tmp;
+simulationData->mData->mIsMajorTimeStep = %<(SLibCG_SE(LibIsMajorTimeStep()))>;
+tmp = %<(SLibCG_SE(SLibCGIRGetSolverAssertCheck()))>;
+simulationData->mData->mIsSolverAssertCheck = tmp;
+simulationData->mData->mIsSolverCheckingCIC = false;
+tmp = %<(SLibCG_SE(RTMSolverIs("ComputingJacobian")))>;
+simulationData->mData->mIsComputingJacobian = tmp;
+simulationData->mData->mIsSolverRequestingReset = false;
+tmp_e[0] = 0;
+tmp_p[0] = rtB.fg20q0droj[0];
+tmp_p[1] = rtB.fg20q0droj[1];
+tmp_p[2] = rtB.fg20q0droj[2];
+tmp_p[3] = rtB.fg20q0droj[3];
+tmp_e[1] = 4;
+simulationData->mData->mInputValues.mN = 4;
+simulationData->mData->mInputValues.mX = &tmp_p[0];
+simulationData->mData->mInputOffsets.mN = 2;
+simulationData->mData->mInputOffsets.mX = &tmp_e[0];
+simulationData->mData->mDx.mN = 2;
+simulationData->mData->mDx.mX = (real_T *)&_rtXdot->nzskcsc3qt;
+simulator = (NeslSimulator *)rtDW.gvlevs1a3e;
+diagnosticManager = (NeuDiagnosticManager *)rtDW.prceq1xcrn;
+diagnosticTree = neu_diagnostic_manager_get_initial_tree(diagnosticManager);
+tmp_i = ne_simulator_method(simulator, NESL_SIM_DERIVATIVES, simulationData, diagnosticManager);
+if (tmp_i != 0) {
+    tmp = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+    if (tmp) {
+        msg = rtw_diagnostics_msg(diagnosticTree);
+        %<(LibSetRTModelErrorStatus("msg"))>;
+    }
+}
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction

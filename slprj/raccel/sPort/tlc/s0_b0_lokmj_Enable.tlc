@@ -1,0 +1,19 @@
+%implements s0_b0_lokmj_Enable "C"
+
+%function Enable(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcEnableFcnOfS0B0 = OpaqueTLCBlockFcn("Enable", 0, 0, 0, 7)
+%assign tlcEnableFcnOfS0B1 = OpaqueTLCBlockFcn("Enable", 0, 1, 0, 7)
+%<tlcEnableFcnOfS0B0>\
+%<tlcEnableFcnOfS0B1>\
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Enable(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%endfunction

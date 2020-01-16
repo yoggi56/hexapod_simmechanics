@@ -1,0 +1,21 @@
+%implements s0_b0_lokmj_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcUpdateFcnOfS0B0 = OpaqueTLCBlockFcn("Update", 0, 0, 0, 3)
+%assign tlcUpdateFcnOfS0B1 = OpaqueTLCBlockFcn("Update", 0, 1, 0, 3)
+%<tlcUpdateFcnOfS0B0>\
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcUpdateFcnOfS0B1>\
+}
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 3, fcnProtoType)>
+%endfunction

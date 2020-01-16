@@ -1,0 +1,101 @@
+%implements s0_b0_lokmj_Outputs "C"
+
+%function Outputs(block, system) Output
+%<SLibCGIRAccessLocalVar(0, 0)> %% bdf5hbyztu
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+boolean_T first_output;
+NeslSimulationData *simulationData;
+real_T time;
+real_T tmp[4];
+int_T tmp_p[2];
+NeslSimulator *simulator;
+NeuDiagnosticManager *diagnosticManager;
+NeuDiagnosticTree *diagnosticTree;
+int32_T tmp_e;
+char *msg;
+%closefile localVarDecl
+%assign tlcOutputsFcnOfS0B0 = OpaqueTLCBlockFcn("Outputs", 0, 0, 0, 2)
+%assign tlcOutputsFcnOfS0B1 = OpaqueTLCBlockFcn("Outputs", 0, 1, 0, 2)
+%assign tlcOutputsFcnOfS0B2 = OpaqueTLCBlockFcn("Outputs", 0, 2, 0, 2)
+%assign tlcOutputsFcnOfS0B4 = OpaqueTLCBlockFcn("Outputs", 0, 4, 0, 2)
+%<SLibGetRootInportsFromFile(system)>
+%<SLibGenerateExtModeOutput(system)>
+%<tlcOutputsFcnOfS0B0>\
+if (%<(SLibCGIRIsSampleHit(1, 0))>) {
+%<tlcOutputsFcnOfS0B1>\
+%<tlcOutputsFcnOfS0B2>\
+    bdf5hbyztu = (real_T)rtP.Gain_Gain * 0.0078125 * (real_T)rtB.cqrswdt0mj;
+%<tlcOutputsFcnOfS0B4>\
+}
+first_output = false;
+if (rtDW.cwcafxbak0 == 0.0) {
+    rtDW.cwcafxbak0 = 1.0;
+    first_output = true;
+}
+if (first_output) {
+    rtX.jax1pk4qzt[0] = rtB.lppofjsn4f;
+    rtX.jax1pk4qzt[1] = 0.0;
+}
+rtB.fg20q0droj[0] = rtX.jax1pk4qzt[0];
+rtB.fg20q0droj[1] = rtX.jax1pk4qzt[1];
+rtB.fg20q0droj[2] = ((rtB.lppofjsn4f - rtX.jax1pk4qzt[0]) * 20.0 - 2.0 * rtX.jax1pk4qzt[1]) * 20.0;
+rtB.fg20q0droj[3] = 0.0;
+simulationData = (NeslSimulationData *)rtDW.klsagfeed5;
+time = %<(SLibCG_SE(LibGetT()))>;
+simulationData->mData->mTime.mN = 1;
+simulationData->mData->mTime.mX = &time;
+simulationData->mData->mContStates.mN = 2;
+simulationData->mData->mContStates.mX = (real_T *)&rtX.nzskcsc3qt;
+simulationData->mData->mDiscStates.mN = 0;
+simulationData->mData->mDiscStates.mX = NULL;
+simulationData->mData->mModeVector.mN = 0;
+simulationData->mData->mModeVector.mX = NULL;
+first_output = %<(SLibCG_SE(SLibCGIRGetSolverFoundZcEvents()))>;
+simulationData->mData->mFoundZcEvents = first_output;
+simulationData->mData->mIsMajorTimeStep = %<(SLibCG_SE(LibIsMajorTimeStep()))>;
+first_output = %<(SLibCG_SE(SLibCGIRGetSolverAssertCheck()))>;
+simulationData->mData->mIsSolverAssertCheck = first_output;
+simulationData->mData->mIsSolverCheckingCIC = false;
+first_output = %<(SLibCG_SE(RTMSolverIs("ComputingJacobian")))>;
+simulationData->mData->mIsComputingJacobian = first_output;
+simulationData->mData->mIsSolverRequestingReset = false;
+tmp_p[0] = 0;
+tmp[0] = rtB.fg20q0droj[0];
+tmp[1] = rtB.fg20q0droj[1];
+tmp[2] = rtB.fg20q0droj[2];
+tmp[3] = rtB.fg20q0droj[3];
+tmp_p[1] = 4;
+simulationData->mData->mInputValues.mN = 4;
+simulationData->mData->mInputValues.mX = &tmp[0];
+simulationData->mData->mInputOffsets.mN = 2;
+simulationData->mData->mInputOffsets.mX = &tmp_p[0];
+simulationData->mData->mOutputs.mN = 2;
+simulationData->mData->mOutputs.mX = &rtB.eiogzvzeyo[0];
+simulationData->mData->mSampleHits.mN = 0;
+simulationData->mData->mSampleHits.mX = NULL;
+simulationData->mData->mIsFundamentalSampleHit = false;
+simulator = (NeslSimulator *)rtDW.gvlevs1a3e;
+diagnosticManager = (NeuDiagnosticManager *)rtDW.prceq1xcrn;
+diagnosticTree = neu_diagnostic_manager_get_initial_tree(diagnosticManager);
+tmp_e = ne_simulator_method(simulator, NESL_SIM_OUTPUTS, simulationData, diagnosticManager);
+if (tmp_e != 0) {
+    first_output = error_buffer_is_empty(%<(LibGetRTModelErrorStatus())>);
+    if (first_output) {
+        msg = rtw_diagnostics_msg(diagnosticTree);
+        %<(LibSetRTModelErrorStatus("msg"))>;
+    }
+}
+%<SLibInsertSolverResetCode()>\
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Outputs(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction

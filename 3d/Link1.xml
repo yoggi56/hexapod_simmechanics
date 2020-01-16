@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="05/23/16||15:32:41" using="SimMechanics Link Version 4.6" from="SolidWorks 23.1.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Link1" uid="Link1" version="153">
+<AssemblyFile name="Link1.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="servo-2" uid="servo-2" grounded="true" entityUid="servo" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="bottom cover-1" uid="bottom cover-1" grounded="true" entityUid="bottom cover*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.0011028271782151933 -0.0066398570142473176 0.0050929677312296917</Translation>
+</Transform>
+</Instance>
+<Instance name="servo Case-1" uid="servo Case-1" entityUid="servo Case*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.001102827178215195 0.015982017985752682 0.0050929677312296813</Translation>
+</Transform>
+</Instance>
+<Instance name="servo cover-1" uid="servo cover-1" entityUid="servo cover*:*Default">
+<Transform>
+<Rotation>-1 0 0 0 -1.2246063538223773e-016 1 0 1 1.2246063538223773e-016</Rotation>
+<Translation>0.018264672821784806 0.017172642985752683 -0.0047495322687703227</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-3" uid="long screw-3" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538223773e-016 -0.97954462476851201 0.20122705605140451 1 1.1995565713440761e-016 0 0 0.20122705605140451 0.97954462476851201</Rotation>
+<Translation>-0.018438327178215207 -0.0063731570142473125 0.012903467731229679</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-4" uid="long screw-4" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538223778e-016 -0.68437245061056506 0.72913260031717797 1 0 0 0 0.72913260031717797 0.68437245061056506</Rotation>
+<Translation>0.016232672821784821 -0.0063731570142473194 0.012903467731229679</Translation>
+</Transform>
+</Instance>
+<Instance name="spline output-1" uid="spline output-1" entityUid="spline output*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0084221728217848055 0.020677842985752679 0.0050929677312296813</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-1" uid="long screw-1" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.224606353822377e-016 0.0510990809547631 0.99869358860742596 1 0 -1.2230065141303249e-016 0 0.99869358860742596 -0.0510990809547631</Rotation>
+<Translation>0.016232672821784821 -0.0063731570142473194 -0.0027175322687703176</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-2" uid="long screw-2" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538223778e-016 0.63949721091256784 0.76879341648784116 1 0 0 0 0.76879341648784116 -0.63949721091256784</Rotation>
+<Translation>-0.018438327178215207 -0.0063731570142473125 -0.0027175322687703176</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="asb-04-1" uid="asb-04-1" entityUid="asb-04*:*Default">
+<Transform>
+<Rotation>1 2.2204460492503131e-016 0 0 -1.224606353822361e-016 -0.99999999999999989 -2.2204460492503131e-016 1 -1.224606353822361e-016</Rotation>
+<Translation>-0.00056942717821518822 0.0057045429857526869 -0.0089532322687703239</Translation>
+</Transform>
+</Instance>
+<Instance name="asb-06-2" uid="asb-06-2" entityUid="asb-06*:*Default">
+<Transform>
+<Rotation>1.0000000000000002 2.2204460492503027e-016 -1.8041124150158794e-016 -1.8041124150158794e-016 -1.2246063538223654e-016 -1.0000000000000002 -2.2204460492503022e-016 1 -1.2246063538223639e-016</Rotation>
+<Translation>0.03039317282178481 0.011127442985752686 -0.011239232268770331</Translation>
+</Transform>
+</Instance>
+<Instance name="asb-04-2" uid="asb-04-2" entityUid="asb-04*:*Default">
+<Transform>
+<Rotation>-1.8041124150158831e-016 1 2.2204460492503015e-016 -1.0000000000000002 -1.8041124150158735e-016 -4.2223169405275485e-015 -4.2223169405275485e-015 -2.2204460492503094e-016 1.0000000000000002</Rotation>
+<Translation>0.03039317282178482 0.0027962429857526995 0.0094998677312296328</Translation>
+</Transform>
+</Instance>
+<Instance name="servo-3" uid="servo-3" entityUid="servo" rigid="true">
+<Transform>
+<Rotation>1.1102230246252325e-016 -3.4450524030730769e-016 0.99999999999999989 -0.99999999999999989 4.2223169405275098e-015 1.1102230246251753e-016 -4.2223169405275114e-015 -1 -3.4450524030730808e-016</Rotation>
+<Translation>0.039702005090555131 0.0011600158075374851 0.015204410716982307</Translation>
+</Transform>
+<Instance name="bottom cover-1" uid="bottom cover-1" grounded="true" entityUid="bottom cover*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.0011028271782151931 -0.0066398570142473176 0.0050929677312296917</Translation>
+</Transform>
+</Instance>
+<Instance name="servo Case-1" uid="servo Case-1" entityUid="servo Case*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.0011028271782151944 0.015982017985752685 0.0050929677312296848</Translation>
+</Transform>
+</Instance>
+<Instance name="servo cover-1" uid="servo cover-1" entityUid="servo cover*:*Default">
+<Transform>
+<Rotation>-0.99999999999999978 0 0 0 -1.2246063538223684e-016 1 0 0.99999999999999978 1.2246063538223866e-016</Rotation>
+<Translation>0.018264672821784796 0.017172642985752683 -0.0047495322687703193</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-3" uid="long screw-3" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538224009e-016 -0.97954462476851178 0.20122705605140445 1 1.1995565713440643e-016 0 0 0.20122705605140445 0.97954462476851178</Rotation>
+<Translation>-0.018438327178215197 -0.0063731570142473125 0.012903467731229676</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-4" uid="long screw-4" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538224009e-016 -0.68437245061056518 0.72913260031717808 1 0 0 0 0.72913260031717808 0.68437245061056518</Rotation>
+<Translation>0.016232672821784817 -0.0063731570142473229 0.012903467731229683</Translation>
+</Transform>
+</Instance>
+<Instance name="spline output-1" uid="spline output-1" entityUid="spline output*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0084221728217848037 0.020677842985752679 0.0050929677312296848</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-1" uid="long screw-1" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538224009e-016 0.051099080954763086 0.99869358860742574 1 0 -1.2230065141303005e-016 0 0.99869358860742574 -0.051099080954763086</Rotation>
+<Translation>0.016232672821784814 -0.0063731570142473194 -0.0027175322687703132</Translation>
+</Transform>
+</Instance>
+<Instance name="long screw-2" uid="long screw-2" entityUid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S">
+<Transform>
+<Rotation>1.2246063538224009e-016 0.63949721091256762 0.76879341648784094 1 0 0 0 0.76879341648784094 -0.63949721091256762</Rotation>
+<Translation>-0.0184383271782152 -0.0063731570142473125 -0.0027175322687703202</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Концентричный6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>servo-2</Uid>
+<Uid>servo cover-1</Uid>
+</InstancePath>
+<Position>0.043433999999999987 0.014922500000000002 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>-0.024599900000000001 0.019126199999999999 -0.011849099999999991</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo-2</Uid>
+<Uid>servo cover-1</Uid>
+</InstancePath>
+<Position>0.045973999999999987 0.019304000000000002 0.0019050000000000004</Position>
+<Axis>0 1.1459093933155465e-016 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>-0.052154825077011052 0.0015239999999999993 -0.013373099999999992</Position>
+<Axis>0 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Параллельность3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo-2</Uid>
+<Uid>servo Case-1</Uid>
+</InstancePath>
+<Position>-0.018605499999999997 0.0011906250000000007 -0.0098425000000000023</Position>
+<Axis>-1.3985569933434798e-016 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>-0.052154825077011052 0.0015239999999999993 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Концентричный7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>0.0083311999999999969 0.0015239999999999984 -0.0054228999999999953</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>-0.022631400000000003 0.0022859999999999998 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Концентричный8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>0.0083311999999999969 0.0015239999999999984 -0.013754099999999995</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>-0.022631400000000006 0.0022860000000000016 -0.0083311999999999987</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-1</Uid>
+</InstancePath>
+<Position>-0.052154825077011052 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>-0.022631400000000003 0.0022859999999999998 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Концентричный9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>-0.0022859999999999998 0.015316199999999997 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>-0.0083311999999999987 0.0015240000000000045 -0.0054228999999999996</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Концентричный10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>-0.0022860000000000033 0.0069849999999999973 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>-0.0083311999999999987 0.0015240000000000045 -0.013754100000000005</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-06-2</Uid>
+</InstancePath>
+<Position>0 0.0022859999999999998 -0.01229360000000001</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>-0.052154825077011073 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Концентричный11">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>0.024599900000000008 0.0093217999999999981 -0.011849100000000001</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>servo-3</Uid>
+<Uid>servo cover-1</Uid>
+</InstancePath>
+<Position>-0.0046990000000000087 0.0047625000000000028 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Совпадение9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>-0.052154825077011073 0.0015240000000000045 -0.013373100000000001</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo-3</Uid>
+<Uid>servo cover-1</Uid>
+</InstancePath>
+<Position>-0.0072390000000000128 0.019304000000000002 0.0019049999999999991</Position>
+<Axis>0 1.1459093933155376e-016 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Параллельность4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>asb-04-2</Uid>
+</InstancePath>
+<Position>-0.052154825077011073 0.0015240000000000045 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>servo-3</Uid>
+<Uid>servo Case-1</Uid>
+</InstancePath>
+<Position>-0.01860549999999999 0.0011906250000000001 -0.009842500000000004</Position>
+<Axis>-1.3985569933435513e-016 0 -0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Parallel>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="servo" uid="servo" version="157">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="servo.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="asb-04" uid="asb-04*:*Default" version="335">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="asb-04.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0042506275949616163</Mass>
+<CenterOfMass>0 0.0060244491918420148 0.0044962453719208113</CenterOfMass>
+<Inertia>8.2569975365245618e-007 1.6477974623273061e-006 1.2891885469828448e-006 -1.1222004195624249e-007 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="asb-04_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="asb-06" uid="asb-06*:*Default" version="323">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="asb-06.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0027443413963225659</Mass>
+<CenterOfMass>-0.009926013139759618 0.0062234969189440296 0</CenterOfMass>
+<Inertia>2.9625743611693581e-007 4.3010476337037647e-007 4.5336588511533973e-007 0 0 -1.2246444540156535e-007</Inertia>
+</MassProperties>
+<GeometryFile name="asb-06_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.22588235294117645" g="0.22588235294117645" b="0.22588235294117645" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="bottom cover" uid="bottom cover*:*Default" version="237">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="bottom cover.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0011847683622322645</Mass>
+<CenterOfMass>0 0.00085958385692466201 0</CenterOfMass>
+<Inertia>3.7178462102193862e-008 1.750726887925645e-007 1.3854212741521694e-007 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="bottom cover_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Part>
+<Part name="long screw" uid="long screw*:*CR-BHMS 0.06-80x0.625x0.625-S" version="190">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="long screw.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>5.7146030849913822e-005</Mass>
+<CenterOfMass>0.014362119123463964 0 0</CenterOfMass>
+<Inertia>2.0507024996494674e-011 4.8166412248477032e-009 4.8166412248477032e-009 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="long screw_CR-BHMS 0.06-80x0.625x0.625-S_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="servo Case" uid="servo Case*:*Default" version="4172">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="servo Case.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0042120705333267439</Mass>
+<CenterOfMass>8.0421253916344759e-005 -0.006085771141315038 -4.530331550401851e-005</CenterOfMass>
+<Inertia>4.1588832731583436e-007 9.2035505612645697e-007 9.0873885313827854e-007 6.0759023032515814e-010 1.3637588222623431e-009 -8.1711540362718172e-009</Inertia>
+</MassProperties>
+<GeometryFile name="servo Case_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Diffuse r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Specular r="0.25098039215686274" g="0.25098039215686274" b="0.25098039215686274" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31</Shininess>
+</VisualProperties>
+</Part>
+<Part name="servo cover" uid="servo cover*:*Default" version="1507">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="servo cover.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0030922145082528411</Mass>
+<CenterOfMass>0.019173079671185901 0.0098425000000000006 0.006606955509349084</CenterOfMass>
+<Inertia>1.7866158138829118e-007 7.114551879522922e-007 8.1328941256582228e-007 0 7.8869688982482397e-009 0</Inertia>
+</MassProperties>
+<GeometryFile name="servo cover_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.31000000238418579</Shininess>
+</VisualProperties>
+</Part>
+<Part name="spline output" uid="spline output*:*Default" version="704">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="spline output.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0076372224365529292</Mass>
+<CenterOfMass>-5.5351935227350916e-006 0.003553485244279253 0</CenterOfMass>
+<Inertia>1.9204633656012841e-007 1.9980755604797697e-007 1.9204610256810174e-007 0 0 -6.7539753824415658e-011</Inertia>
+</MassProperties>
+<GeometryFile name="spline output_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.42823529411764705" g="0.45270588235294118" b="0.50980392156862742" a="1"/>
+<Diffuse r="0.6588235294117647" g="0.69647058823529417" b="0.78431372549019607" a="1"/>
+<Specular r="0.82352941176470584" g="0.87058823529411766" b="0.98039215686274506" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000000000002</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>
